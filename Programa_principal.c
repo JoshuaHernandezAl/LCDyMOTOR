@@ -49,14 +49,7 @@ void main(void) {
     T0CONbits.TMR0ON=1;
     
     LCD_Init();
-    //LCD_gotoXY(0,0);
-    //putrsXLCD("**POKEMON GO!***");
-    //__delay_ms(100);
-    //LCD_WriteChr_CGRAM(wels,0);
-    //__delay_ms(100);
-    //LCD_gotoXY(1,0);
-    //putcXLCD(0);
-    //__delay_ms(100);
+   
     WriteCmdXLCD(0x0C);
     while(1);
     return;
